@@ -31,7 +31,7 @@ const Map = () => {
       let i = 0
       for ( let plane of dataFlights){
         
-        if(i<500) {  // to reduce the number of tht flights and reduce the execution time
+        if(i<1000) {  // to reduce the number of tht flights and reduce the execution time
          const markerFlight = {
          
           position: { lat: parseFloat(plane["latitude"]), lng: parseFloat(plane["longitude"]) }, 
