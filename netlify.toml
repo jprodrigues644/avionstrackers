@@ -1,0 +1,26 @@
+[build]
+  command = "npm run build" # Commande de build
+
+[build.environment]
+  USER_NAME = "${USER_NAME_EXT}" 
+  PASSWORD = "${PASSWORD_EXT}" # 
+  MAP_KEY = "${MAP_KEY_EXT}"
+[context.production.environment]
+  USER_NAME = "$USER_NAME_EXT" 
+  PASSWORD = "$PASSWORD_EXT" # 
+  MAP_KEY = "$MAP_KEY_EXT" # 
+
+[context.deploy-preview.environment]
+   USER_NAME = "$USER_NAME_EXT" 
+  PASSWORD = "$PASSWORD_EXT" # 
+  MAP_KEY = "$MAP_KEY_EXT" # Variable Netlify que vous souhaitez utiliser pour les aperçus de déploiement
+
+[context.branch-deploy.environment]
+  USER_NAME = "$USER_NAME_EXT" 
+  PASSWORD = "$PASSWORD_EXT" # 
+  MAP_KEY = "$MAP_KEY_EXT"
+
+[context.split-test.environment]
+   USER_NAME = "$USER_NAME_EXT" 
+  PASSWORD = "$PASSWORD_EXT" # 
+  MAP_KEY = "$MAP_KEY_EXT"
