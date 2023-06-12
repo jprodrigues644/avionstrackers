@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build" # Commande de build
+  command = "build.sh" # Commande de build
 
 [build.environment]
   USER_NAME = "${process.env.USER_NAME}" 
