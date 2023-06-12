@@ -1,4 +1,5 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 const USER_NAME = process.env.USER_NAME;
 const PASSWORD = process.env.PASSWORD;
