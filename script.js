@@ -1,7 +1,5 @@
 require('dotenv').config();
 
-
-
 const USER_NAME = process.env.USER_NAME;
 const PASSWORD = process.env.PASSWORD;
 const MAP_KEY = process.env.MAP_KEY;
