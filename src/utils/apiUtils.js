@@ -1,8 +1,8 @@
 import axios from 'axios';
 import moment from 'moment';
-const username = `${process.env.USER_NAME}`;
-const password = `${process.env.PASSWORD}`;
-const API = `${process.env.MAP_KEY}`;
+const username = `${USER_NAME}`;
+const password = `${PASSWORD}`;
+const API = `${MAP_KEY}`;
 let time = moment() ;
 let timeUnix = time.unix();
 const handleApiError = (error) => {
