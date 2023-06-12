@@ -1,12 +1,10 @@
 import axios from 'axios';
 import moment from 'moment';
 
-// eslint-disable-next-line no-undef
-const username = `${USER_NAME}`;
-// eslint-disable-next-line no-undef
-const password = `${PASSWORD}`;
-// eslint-disable-next-line no-undef
-const API = `${MAP_KEY}`;
+const username = `${process.env.USER_NAME}`;
+const password = `${process.env.PASSWORD}`;
+const API = `${process.env.MAP_KEY}`;
+console.log(API, username,password);
 let time = moment() ;
 let timeUnix = time.unix();
 const handleApiError = (error) => {
