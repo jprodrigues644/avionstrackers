@@ -1,2 +1,2 @@
-npm install dotenv
+npm i dotenv
 node script.js
