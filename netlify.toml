@@ -2,25 +2,25 @@
   command = "npm run build" # Commande de build
 
 [build.environment]
-  USER_NAME = "${USER_NAME_EXT}" 
-  PASSWORD = "${PASSWORD_EXT}" # 
-  MAP_KEY = "${MAP_KEY_EXT}"
+  USER_NAME = "${process.env.USER_NAME}" 
+  PASSWORD = "${process.env.PASSWORD}" # 
+  MAP_KEY = "${process.env.MAP_KEY}" #
 [context.production.environment]
-  USER_NAME = "$USER_NAME_EXT" 
-  PASSWORD = "$PASSWORD_EXT" # 
-  MAP_KEY = "$MAP_KEY_EXT" # 
+  USER_NAME = "$USER_NAME" 
+  PASSWORD = "$PASSWORD" # 
+  MAP_KEY = "$MAP_KEY" # 
 
 [context.deploy-preview.environment]
-   USER_NAME = "$USER_NAME_EXT" 
-  PASSWORD = "$PASSWORD_EXT" # 
-  MAP_KEY = "$MAP_KEY_EXT" # Variable Netlify que vous souhaitez utiliser pour les aperçus de déploiement
+   USER_NAME = "$USER_NAME" 
+  PASSWORD = "$PASSWORD" # 
+  MAP_KEY = "$MAP_KEY" # Variable Netlify que vous souhaitez utiliser pour les aperçus de déploiement
 
 [context.branch-deploy.environment]
-  USER_NAME = "$USER_NAME_EXT" 
-  PASSWORD = "$PASSWORD_EXT" # 
-  MAP_KEY = "$MAP_KEY_EXT"
+  USER_NAME = "$USER_NAME" 
+  PASSWORD = "$PASSWORD" # 
+  MAP_KEY = "$MAP_KEY"
 
 [context.split-test.environment]
-   USER_NAME = "$USER_NAME_EXT" 
-  PASSWORD = "$PASSWORD_EXT" # 
-  MAP_KEY = "$MAP_KEY_EXT"
+   USER_NAME = "$USER_NAME" 
+  PASSWORD = "$PASSWORD" # 
+  MAP_KEY = "$MAP_KEY"
