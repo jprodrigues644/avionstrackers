@@ -2,9 +2,9 @@
   command = "npm run setup-env && npm run build"
 
 [build.environment]
-  USER_NAME = "${process.env.USER_NAME}" 
-  PASSWORD = "${process.env.PASSWORD}" # 
-  MAP_KEY = "${process.env.MAP_KEY}" #
+  USER_NAME = "${process.env.NETLIFY_ENV_USER_NAME}" 
+  PASSWORD = "${process.env.NETLIFY_ENV_PASSWORD }" # 
+  MAP_KEY = "${process.env.NETLIFY_ENV_MAP_KEY}" #
 [context.production.environment]
   USER_NAME = "$USER_NAME" 
   PASSWORD = "$PASSWORD" # 
