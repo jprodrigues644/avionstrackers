@@ -34339,7 +34339,7 @@ var Map = function Map() {
     ref: mapRef,
     style: {
       width: '100%',
-      height: '51.8rem'
+      height: '55rem'
     }
   });
 };
