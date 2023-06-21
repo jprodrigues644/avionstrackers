@@ -21,7 +21,6 @@ const handleApiError = (error) => {
     }
   };
   
-
 const BASE_URL = "https://opensky-network.org/api/states/all"; //  API base URL
 
 export const ResponseFlightAPI = async () => {
@@ -33,7 +32,6 @@ export const ResponseFlightAPI = async () => {
       handleApiError(error);
       }
 };
-
 
 export const baseUrl = () => 
 {

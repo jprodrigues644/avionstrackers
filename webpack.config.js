@@ -7,6 +7,7 @@ import Dotenv from 'dotenv-webpack';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 export default {
+  mode: 'none',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),

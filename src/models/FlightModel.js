@@ -1,5 +1,4 @@
 import { ResponseFlightAPI} from '../utils/apiUtils.js';
-
 export const fetchFlight = async () => {
   const response = await (ResponseFlightAPI());
   const planes = [];
