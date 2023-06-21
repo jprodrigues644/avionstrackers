@@ -28,7 +28,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start ",
     "build": "webpack --config webpack.config.js",
     "setup-env": "node scripts/setup-env.js",
     "test": "react-scripts test",

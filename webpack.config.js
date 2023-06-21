@@ -38,7 +38,11 @@ export default {
     new Dotenv(),
   ],
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    port: 3000,
+    devServer: {
+        static: {
+          directory: path.join(__dirname, 'dist'),
+        },
+        port: 3000, 
+      },
   },
 };
