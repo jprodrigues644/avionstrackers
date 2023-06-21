@@ -127,7 +127,7 @@ const Map = () => {
     }
   }, []);
 
-  return <div ref={mapRef} style={{ width: '100%', height: '51.8rem' }} />;
+  return <div ref={mapRef} style={{ width: '100%', height: '55rem' }} />;
 };
 
 export default Map;
